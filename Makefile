@@ -1,6 +1,6 @@
 CC := gcc
 ARCHS := -arch i386 -arch x86_64
-CFLAGS := -c -std=c99 -O2 -pedantic -Wall -Wextra $(ARCHS) -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+CFLAGS := -c -std=c99 -O2 -pedantic -Wall -Wextra $(ARCHS) -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -mmacosx-version-min=10.11
 LD := gcc
 LDFLAGS := $(ARCHS)
 
